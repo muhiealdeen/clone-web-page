@@ -80,7 +80,7 @@ header{
 /*---------------------------landing section-----------*/
 .landing-page img{
   width: 100%;
-  height:100vh;
+  height:100%;
   margin-bottom: 40px;
 }
 h1{
@@ -144,6 +144,52 @@ color:black;
 .most{ 
 margin-bottom: 2vh;
 }
+
+.current {
+  width: 100%;
+  height: 100%;
+  background: green;
+  background: -moz-linear-gradient(top, #016931 15%, #0082A7 15%, white 50%);
+  background: -webkit-linear-gradient(top, #016931 15%, #0082A7 15%, white 50%);
+  background: linear-gradient(to bottom, #016931 15%, #0082A7 50%, white 50%);
+  
+}
+
+.current .section  {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.current h3 {
+  text-align: center;
+  color: #fff;
+  font-family:Cambria, serif;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.pic1,.pic2, .pic3 {
+  background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%), url(https://www.triodos.nl/binaries/content/gallery/tbnl/flex-card-images/homepage/over-triodos-bank---helen-1.jpeg/over-triodos-bank---helen-1.jpeg/triodoshippo%3AflexRegular);
+  background-size: cover;
+  height: 17em;
+  width: 13em;
+}
+.card {
+
+  border-radius: 20px;
+  margin: 20px;
+  transition: 0.7s ease-out;
+}
+
+.info {
+  text-align: left;
+  color: white;
+  padding: 45px 15px 0px 15px;
+}
+
+
 .section2{
   width: 100%;
   display: flex;
@@ -262,5 +308,10 @@ footer{
   #options{
     width: 90%;
     margin-left: 5%;
+  }
+  .current .section  {
+   flex-direction: column;
+   padding-left: 5vw;
+  
   }
 } 
