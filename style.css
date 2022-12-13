@@ -1,6 +1,7 @@
 *{ margin:0 ;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html{
@@ -26,7 +27,7 @@ header{
   display: flex; 
 
   background-color: white;
-  height: 7vh;
+  /* height: 7vh; */
 }
 .login{
   margin-left: auto;
@@ -78,10 +79,13 @@ header{
   transform: rotate(-45deg);
 }
 /*---------------------------landing section-----------*/
-.landing-page img{
+.landing-page{
+  background-image:url(bg.jpg);
   width: 100%;
   height:100%;
-  margin-bottom: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 h1{
   font-size: 36px;
@@ -89,12 +93,19 @@ h1{
   padding-bottom: 25px;
 }
 .content{
+  /* padding-top: 200px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  width: 60%;
-  margin-left: 15%;
-  position: absolute; 
-  top: 50vh;
-  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(86, 86, 86, 0.5));
+  /* width: 60%; */
+  /* margin-left: 15%; */
+  /* position: absolute; */
+  /* top: 510vw; */
+  color:white;
 }
 .content p{
   font-family: "Akkurat", Arial, sans-serif;
@@ -117,13 +128,13 @@ h1{
 }
 .paragaph{
   width: 60%;
+  margin-top: 40px;
   margin-left: 20%;
   text-align: center;
   margin-bottom: 40px;
   line-height: 27px;
 
 }
-
 .section1{
   width: 100%;
   padding-left: 10%;
@@ -160,18 +171,31 @@ margin-bottom: 2vh;
   height: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 70px;
 }
 
 .current h3 {
+  width: 100%;
   text-align: center;
   color: #fff;
   font-family:Cambria, serif;
-  padding-bottom: 30px;
-  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 70px;
 }
-
-.pic1,.pic2, .pic3 {
-  background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%), url(https://www.triodos.nl/binaries/content/gallery/tbnl/flex-card-images/homepage/over-triodos-bank---helen-1.jpeg/over-triodos-bank---helen-1.jpeg/triodoshippo%3AflexRegular);
+.pic1 {
+  background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%), url(pic1.jpeg);
+  background-size: cover;
+  height: 17em;
+  width: 13em;
+}
+.pic2 {
+  background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%), url(pic2.jpeg);
+  background-size: cover;
+  height: 17em;
+  width: 13em;
+}
+.pic3 {
+  background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%), url(pic3.jpeg);
   background-size: cover;
   height: 17em;
   width: 13em;
@@ -182,7 +206,6 @@ margin-bottom: 2vh;
   margin: 20px;
   transition: 0.7s ease-out;
 }
-
 .info {
   text-align: left;
   color: white;
@@ -243,7 +266,6 @@ footer{
   color: white;
   margin-left: 10%; 
   padding-top: -5px;
- 
   
 }
 .subfooterCH{
@@ -311,7 +333,8 @@ footer{
   }
   .current .section  {
    flex-direction: column;
-   padding-left: 5vw;
+   align-items: center;
+   padding-bottom: 100px;
   
   }
 } 
